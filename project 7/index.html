@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Code Breaker – The Array Heist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Code Breaker – The Array Heist</h1>
+  <div id="secret-clue"></div>
+  <div class="array-container" id="array"></div>
+  <section class="controls">
+    <div class="inputs">
+      <label>
+        Index:
+        <input type="number" id="input-index" min="0" max="9" />
+      </label>
+      <label>
+        Value:
+        <input type="number" id="input-value" min="0" max="9" />
+      </label>
+      <label>
+        Pattern:
+        <input type="text" id="input-pattern" placeholder="e.g. 2,1,4" />
+      </label>
+    </div>
+    <div class="buttons">
+      <button id="btn-insert">Insert</button>
+      <button id="btn-delete">Delete</button>
+      <button id="btn-search">Search</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+    <div class="level-timer">
+      <span id="level-info">Level 1</span>
+      <span id="timer"></span>
+    </div>
+  </section>
+  <div id="feedback"></div>
+</main>
+<audio id="audio-beep" src=""></audio>
+<audio id="audio-buzz" src=""></audio>
+<audio id="audio-fanfare" src=""></audio>
+<script src="script.js"></script>
+</body>
+</html>
